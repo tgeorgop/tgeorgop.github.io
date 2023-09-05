@@ -1,0 +1,91 @@
+/* CSS Document */
+/* All comments go between the front slash and asterisk symbols */
+
+body {
+	background-color: #EEEEEE;   /* background color */
+	color: #222222;          /* text color for the entire page */
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+
+h1 { 
+	text-align:center;     /* centers h1 and h2 content */
+	color: white;
+
+}
+h2{ 
+	text-align:center;
+	color: #222B5C;
+
+}
+
+h3{ 
+	text-align:center;
+	color: #222B5C;
+
+}
+/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
+#wrapper {
+	width: 85%;
+	margin: 0 auto;    /* centers wrapper */
+}
+
+/* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
+.stepHeader{
+	color: #FFFFFF;
+	padding:1px;
+	text-align:left;
+	background-color:#0062A5;
+	font-weight: bold;
+	font-size: 125%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.stepTitle{
+	color: #FFFFFF;
+	padding:10px;
+	text-align:left;
+	background-color:#222B5C;
+	font-weight: bold;
+	font-size: 125%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	
+}
+
+.stepContent{ 
+	background-color: white;
+	padding:7px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.stepDescription {
+	width:55%;
+	padding:5px;
+	line-height:145%;
+}
+
+.stepImage {
+	width:40%;	
+	padding:5px;
+	text-align: center;
+
+}
+
+.stepImage img {
+    width:100%;
+    height:auto;
+}
+
+strong {
+  font-weight: 800;
+}
