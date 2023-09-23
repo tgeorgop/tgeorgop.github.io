@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  background-image: url("../img/fence.png"); /* background image*/
+  color: #444; /* text color for the entire document */
+  font-size: 12px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+#wrapper {
+  width: 900px;
+  margin: 0 auto; /* centers wrapper */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7); /* creates white background with 80% opacity */
+}
+#menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+a.one {
+  padding: 15px;
+  margin: 3px;
+  font-size: 125%;
+  background-color: #df6050;
+  color: #ffffff;
+  box-shadow: 0 4px 6px 0 gray, 0 6px 10px 0 gray;
+  border-radius: 5px;
+}
+a.one:hover {
+  font-size: 180%;
+  background-color: #e5b878;
+  color: #000000;
+  box-shadow: 0 4px 6px 0 gray, 0 6px 10px 0 gray;
+  border-radius: 5px;
+}
+table {
+  margin: 0 auto; /* centers table*/
+}
+td {
+  background-color: white; /* sets background color for table cells*/
+}
+h1, h2, h3 {
+  text-align: center; /* centers h1 and h2 content */
+}
+h1 {
+  font-size: 250%;
+}
+h2 {
+  font-size: 200%;
+}
+h3 {
+  font-size: 125%;
+}
+strong {
+  font-weight: 800;
+}
+audio {
+  width: 200px; /* sets the width of the audio controls */
+}
