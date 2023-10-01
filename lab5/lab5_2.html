@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>lab5_1</title>
+<link href="css/lab5.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+table, td {
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<div class="stepImage"> <img src="img/csusm_banner.png" alt="csusm logo" width="117%" height="90" /> </div>
+<div id="header">
+  <div class="stepHeader">
+    <h1> Getting Started with H5P </h1>
+  </div>
+  <br>
+  <div id="menu"> <a class="one" href="lab5_1.html"> Why Use H5P? </a> <a class="one" href="lab5_2.html"> Teaching Strategies </a> </div>
+  <br>
+  <h2>Hover over the cards to learn more about how you can use H5P for teaching and learning!</h2>
+  <table style="width 100%" class="center" >
+    <tr>
+      <td><img onmouseenter="showPresentation()" id="front_presentation"  src="img/front_presentation.png"   /> <img onmouseleave="hidePresentation()" id="back_presentation" src="img/back_presentation.png" /></td>
+      <td><img onmouseenter="showVideo()" id="front_video"  src="img/front_video.png"   /> <img onmouseleave="hideVideo()" id="back_video" src="img/back_video.png" /></td>
+      <td><img onmouseenter="showHotspot()" id="front_hotspot"  src="img/front_hotspot.png"   /> <img onmouseleave="hideHotspot()" id="back_hotspot" src="img/back_hotspot.png" /></td>
+    </tr>
+  </table>
+  <div id="answer"></div>
+  <!-- This is a placeholder to display the answer--> 
+  
+</div>
+<!-- closing  “wrapper” --> 
+
+<script>
+ function showPresentation() {
+	   $("#front_presentation").hide();
+	   $("#back_presentation").show();
+	   $("#answer").html("<h3>Instructors can present the related concepts together and insert headings, links, images, videos, audio to present the content and to engage learners. Quiz type questions can be used for recall practice and self-checks. </h3>");
+	}
+
+function hidePresentation() {
+	   $("#front_presentation").show();
+	   $("#back_presentation").hide();
+	   $("#answer").html("");  
+	}
+		
+function showVideo() {
+	   $("#front_video").hide();
+	   $("#back_video").show();
+	   $("#answer").html("<h3>Videos may be enriched with interactivities like explanations, extra pictures, tables, Fill in the Blank and multiple choice questions. Quiz questions support adaptivity, meaning that you can jump to another part of the video based on the user's input.  Interactive summaries can be added at the end of the video. </h3>");
+	}
+
+function hideVideo() {
+	   $("#front_video").show();
+	   $("#back_video").hide();
+	   $("#answer").html("");  
+	}
+		
+
+function showHotspot() {
+	   $("#front_hotspot").hide();
+	   $("#back_hotspot").show();
+	   $("#answer").html("<h3>The image hotspots activity uses an image that has various points of interest on it. Students can view the entire image, see the relationships between various aspects of the image, and click on a point of interest to see in-depth information about it. </h3>");
+	}
+
+function hideHotspot() {
+	   $("#front_hotspot").show();
+	   $("#back_hotspot").hide();
+	   $("#answer").html("");  
+	}
+		
+</script>
+</body>
+</html>

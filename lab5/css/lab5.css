@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+#wrapper {
+  width: 1200px;
+  margin: 0 auto; /* centers wrapper */
+  text-align: left;
+}
+#front_presentation {
+  border: black 5px solid;
+}
+#back_presentation {
+  display: none; /* hides content */
+  border: black 5px solid;
+}
+#front_video {
+  border: black 5px solid;
+}
+#back_video {
+  display: none; /* hides content */
+  border: black 5px solid;
+}
+#front_hotspot {
+  border: black 5px solid;
+}
+#back_hotspot {
+  display: none; /* hides content */
+  border: black 5px solid;
+}
+.choices {
+  cursor: pointer;
+}
+body {
+  text-align: center;
+  background-color: #eeeeee;
+  color: #222222; /* text color for the entire page */
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+h1 {
+  text-align: center; /* centers h1 and h2 content */
+  color: #ffffff;
+}
+h2 {
+  text-align: center;
+  color: #222B5C;
+}
+h3 {
+  text-align: center;
+  color: #000000;
+}
+#menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+a {
+  padding: 15px;
+  margin: 3px;
+  font-size: 130%;
+  background-color: #0062A5;
+  color: #ffffff;
+  box-shadow: 0 4px 6px 0 gray, 0 6px 10px 0 gray;
+  border-radius: 5px;
+}
+a:hover {
+  font-size: 200%;
+  background-color: #3ab5e8;
+  color: #222b5c
+}
+.stepHeader {
+  color: #FFFFFF;
+  padding: 1px;
+  text-align: center;
+  background-color: #222b5c;
+  font-weight: bold;
+  font-size: 125%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.stepImage {
+  width: 40%;
+  padding: 5px;
+  text-align: center;
+}
+.stepImage img {
+  width: 100%;
+  height: auto;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  margin: 0 auto; /* centers table*/
+}
