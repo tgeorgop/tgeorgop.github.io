@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/h5p.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Tilt+Neon&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+table, td {
+    padding: 15px;
+}
+</style>
+<title>Create Interactive Content with H5P</title>
+</head>
+
+<body>
+<div class="topnav"> 
+	<a href="index.html">HOME</a>
+	<a href="overview.html">OVERVIEW</a>
+	<a class="active" href="benefits.html">BENEFITS</a> 
+	<a href="strategies.html">STRATEGIES</a> 
+	<a href="examples.html">EXAMPLES</a>
+	<a href="create.html">CREATE</a> 
+	<a href="resources.html">RESOURCES</a> 
+	</div>
+<br>
+<div id="wrapper">
+  <div class="body">
+    <h1>Why Use H5P?</h1>
+    <center>
+      <p>Click on each of the buttons below to learn more about the benefits of using H5P interactive content. </p>
+    </center>
+    <table style="width 100%" class="center" >
+      <tr>
+        <td><img onclick="activeLearning()" class="choices" src="img/active_img1.png" alt="Active Learning" /></td>
+        <td><img onclick="universalDesign()" class="choices" src="img/universal_img2.png" alt="Universal Design for Learning" /></td>
+        <td><img onclick="practiceFeedback()" class="choices" src="img/practice_img3.png" alt="Immediate Feedback" /></td>
+      </tr>
+    </table>
+    <div id="feedback"> </div>
+  </div>
+  <script>
+		function activeLearning() {
+			 $("#feedback").html("<h2> Active Learning & Engagement</h2><p> Interactive activities promote engaged learning by actively involving learners in the learning process. Activities that involve physical manipulation, role-playing, simulations, or experiments provide a tangible, hands-on experience. This type of engagement enhances comprehension and retention of information. Interactive activities require learners to actively participate rather than passively receive information. This higher level of involvement keeps learners engaged and attentive.<br><br> Interactive activities can be inherently enjoyable and interesting. The dynamic nature of these activities can capture and hold learners' attention, contributing to a more positive and motivated learning experience. Active engagement with the material through interactive activities has been shown to lead to better retention of information. When learners are actively involved, they are more likely to remember and apply what they have learned.<br> </p>");
+
+         
+      }
+		function universalDesign() {
+			  $("#feedback").html("<h2> Universal Design for Learning Principles </h2><p> Interactive activities can promote Universal Design for Learning (UDL) principles by providing multiple means of engagement, representation, and action/expression. Interactive activities offer a range of formats, allowing learners to engage in ways that suit their learning preferences. <br><br>  Interactive activities often engage multiple senses, providing diverse ways to represent information. This accommodates learners with different sensory preferences or disabilities. Interactive activities often allow for different ways to demonstrate understanding. This accommodates learners with varying communication abilities or preferences.<br><br> It is important to keep accessibility in mind when designing interactive content, such as providing alt text for images, closed captions for videos, and ensuring compatibility with screen readers. This ensures that all learners, including those with disabilities, can fully participate.<br></p>");
+			  
+	  }
+   		function practiceFeedback() {
+			  $("#feedback").html("<h2> Immediate Feedback </h2><p> Many interactive activities offer immediate feedback. This allows learners to gauge their understanding and correct any misconceptions on the spot, which reinforces correct concepts and helps avoid misunderstandings. Immediate feedback contributes to a more effective and satisfying learning experience for learners of all ages and levels. When learners receive feedback right after completing a task or answering a question, it allows them to connect their response with the correct or desired outcome. This reinforces the correct information or behavior in their memory.<br><br>Swift feedback keeps learners engaged and motivated. It provides a sense of progress and accomplishment, which can be a powerful motivator to continue learning. Positive feedback can boost confidence, while constructive feedback can motivate learners to strive for improvement. Immediate feeedback is beneficial for all learners but particularly valuable for those who benefit from timely reinforcement and correction.<br></p> ");
+			  
+      }
+		
+   </script> 
+  
+  <!--body--> 
+  <br>
+  <br>
+  <center>
+    <img src="img/csusm_Logo.png" alt="" width= "75" />
+    <h4>Information and Instructional Technology Services (IITS) | Academic Technology Services (ATS)</h4>
+    <h4><strong>If you have questions, please reach out to us directly at <a href="mailto: cchelp@csusm.edu"> cchelp@csusm.edu </a></strong></h4>
+  </center>
+  <br>
+  <br>
+</div>
+<!--wrapper-->
+</body>
+</html>
